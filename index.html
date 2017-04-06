@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Custom keyboard + screen</title>
+
+    <!-- js -->
+    <script src="lib/js/jquery-3.1.0.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+
+    <!-- css -->
+    <link href="lib/css/journal.bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6">
+                <h1>Keyboard</h1>
+            </div>
+            <div class="col-xs-6">
+                <h1>Output</h1>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div id="keyboard">
+                <div class="row">
+                    <div class="btn btn-primary key-double" id="key-1">
+                        <div>~</div>
+                        <div>`</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-2">
+                        <div>!</div>
+                        <div>1</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-3">
+                        <div>@</div>
+                        <div>2</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-4">
+                        <div>#</div>
+                        <div>3</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-5">
+                        <div>$</div>
+                        <div>4</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-6">
+                        <div>%</div>
+                        <div>5</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-7">
+                        <div>^</div>
+                        <div>6</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-8">
+                        <div>&</div>
+                        <div>7</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-9">
+                        <div>*</div>
+                        <div>8</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-10">
+                        <div>(</div>
+                        <div>9</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-11">
+                        <div>)</div>
+                        <div>0</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-12">
+                        <div>_</div>
+                        <div>-</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-13">
+                        <div>+</div>
+                        <div>=</div>
+                    </div>
+                    <div class="btn btn-primary key-single backspace" id="key-14">
+                        <div>Backspace</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn btn-primary key-single tab" id="key-15">
+                        <div>Tab</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-16">
+                        <div>Q</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-17">
+                        <div>W</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-18">
+                        <div>E</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-19">
+                        <div>R</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-20">
+                        <div>T</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-21">
+                        <div>Y</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-22">
+                        <div>U</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-23">
+                        <div>I</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-24">
+                        <div>O</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-25">
+                        <div>P</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-26">
+                        <div>{</div>
+                        <div>[</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-27">
+                        <div>}</div>
+                        <div>]</div>
+                    </div>
+                    <div class="btn btn-primary key-double forward-slash" id="key-28">
+                        <div>|</div>
+                        <div>\</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn btn-primary key-single capslock" id="key-29">
+                        <div>Capslock</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-30">
+                        <div>A</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-31">
+                        <div>S</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-32">
+                        <div>D</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-33">
+                        <div>F</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-34">
+                        <div>G</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-35">
+                        <div>H</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-36">
+                        <div>J</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-37">
+                        <div>K</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-38">
+                        <div>L</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-39">
+                        <div>:</div>
+                        <div>;</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-40">
+                        <div>"</div>
+                        <div>'</div>
+                    </div>
+                    <div class="btn btn-primary key-single enter" id="key-41">
+                        <div>Enter</div>
+                    </div>
+                </div>
+                                <div class="row">
+                    <div class="btn btn-primary key-single left-shift" id="key-42">
+                        <div>Shift</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-43">
+                        <div>Z</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-44">
+                        <div>X</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-45">
+                        <div>C</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-46">
+                        <div>V</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-47">
+                        <div>B</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-48">
+                        <div>N</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-49">
+                        <div>M</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-50">
+                        <div>&lt;</div>
+                        <div>,</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-51">
+                        <div>&gt;</div>
+                        <div>.</div>
+                    </div>
+                    <div class="btn btn-primary key-double" id="key-52">
+                        <div>?</div>
+                        <div>/</div>
+                    </div>
+                    <div class="btn btn-primary key-single arrow" id="key-53">
+                        <div>&#xffea;</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-54">
+                        <div>Shift</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn btn-primary key-single" id="key-55">
+                        <div>Ctrl</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-56">
+                        <div>Fn</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-57">
+                        <div>&oS;</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-58">
+                        <div>Alt</div>
+                    </div>
+                    <div class="btn btn-primary key-single space" id="key-59">
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-60">
+                        <div>AltGr</div>
+                    </div>
+                    <div class="btn btn-primary key-single" id="key-61">
+                        <div>Ctrl</div>
+                    </div>
+                    <div class="btn btn-primary key-single arrow" id="key-62">
+                        <div>&#xffe9;</div>
+                    </div>
+                    <div class="btn btn-primary key-single arrow" id="key-63">
+                        <div>&#xffec;</div>
+                    </div>
+                    <div class="btn btn-primary key-single arrow" id="key-64">
+                        <div>&#xffeb;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6" id="output">
+            <pre id="output-display"></pre>
+        </div>
+    </div>
+    <div class="col-xs-5">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="btn btn-primary" id="button-weird-mode">WEIRD MODE</div>
+            </div>
+            <div class="col-xs-3">
+                <div class="btn btn-primary" id="button-super-weird-mode">SUPER WEIRD MODE</div>
+            </div>
+            <div class="col-xs-3">
+                <div class="btn btn-primary" id="button-sticky-mode">STICKY MODE</div>
+            </div>
+            <div class="col-xs-3">
+                <div class="btn btn-primary" id="button-reset">RESET MODES</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

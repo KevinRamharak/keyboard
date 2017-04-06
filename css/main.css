@@ -1,0 +1,50 @@
+.row {
+    margin-bottom: 1px;
+}
+
+.arrow div {
+    font-size: 20px;
+    min-width: 30px !important;
+}
+
+.key-double div {
+    min-height : 22.5px;
+    min-width: 25px;
+}
+
+.key-single div {
+    min-width: 25px;
+    min-height : 45px;
+    padding-top: 10px;
+}
+
+.backspace div {
+    min-width: 70px;
+}
+
+.forward-slash div {
+    min-width: 45px;
+}
+
+.tab div {
+    min-width: 50px;
+}
+
+.capslock div{
+    min-width: 70px;
+}
+
+.enter div {
+    min-width: 80px;
+}
+
+.left-shift div {
+    min-width: 113px;
+}
+
+.space div {
+    min-width: 261px;
+}
+
+.output-display {
+ }
